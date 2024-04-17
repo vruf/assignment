@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 63;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,16 +15,15 @@
 		974A5CFE2B94E3260079EC77 /* RestaurantsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974A5CFD2B94E3260079EC77 /* RestaurantsViewModel.swift */; };
 		974A5D002B94E38A0079EC77 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974A5CFF2B94E38A0079EC77 /* RestaurantCell.swift */; };
 		974A5D022B94E3FD0079EC77 /* RestaurantModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 974A5D012B94E3FD0079EC77 /* RestaurantModel.swift */; };
+		97AC13882BCF9F0800B12F79 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 97AC13872BCF9F0800B12F79 /* .swiftlint.yml */; };
+		97AC138E2BCFA2DB00B12F79 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 97AC13852BCF9EF000B12F79 /* .gitignore */; };
 		97E506CD2BCA887600FB98D8 /* Items.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 97E506CB2BCA887600FB98D8 /* Items.xcdatamodeld */; };
-		97E506D12BCBD38900FB98D8 /* FavoriteItems+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E506CF2BCBD38900FB98D8 /* FavoriteItems+CoreDataClass.swift */; };
-		97E506D22BCBD38900FB98D8 /* FavoriteItems+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E506D02BCBD38900FB98D8 /* FavoriteItems+CoreDataProperties.swift */; };
 		97E506D42BCC5F0C00FB98D8 /* FavoritesPlistRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E506D32BCC5F0C00FB98D8 /* FavoritesPlistRepository.swift */; };
 		97E506D72BCD2C7800FB98D8 /* RestaurantCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97E506D62BCD2C7800FB98D8 /* RestaurantCellViewModel.swift */; };
-		97E506D92BCE5C5400FB98D8 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = 97E506D82BCE5C5400FB98D8 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		974A5CE52B94DFCE0079EC77 /* WoltAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoltAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		97431F842BCFFAB300804D47 /* WoltAssignment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WoltAssignment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		974A5CE82B94DFCE0079EC77 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		974A5CEA2B94DFCE0079EC77 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		974A5CEC2B94DFCE0079EC77 /* RestaurantsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewController.swift; sourceTree = "<group>"; };
@@ -34,12 +33,11 @@
 		974A5CFD2B94E3260079EC77 /* RestaurantsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantsViewModel.swift; sourceTree = "<group>"; };
 		974A5CFF2B94E38A0079EC77 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
 		974A5D012B94E3FD0079EC77 /* RestaurantModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantModel.swift; sourceTree = "<group>"; };
+		97AC13852BCF9EF000B12F79 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		97AC13872BCF9F0800B12F79 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = .swiftlint.yml; sourceTree = "<group>"; };
 		97E506CC2BCA887600FB98D8 /* Items.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Items.xcdatamodel; sourceTree = "<group>"; };
-		97E506CF2BCBD38900FB98D8 /* FavoriteItems+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteItems+CoreDataClass.swift"; sourceTree = "<group>"; };
-		97E506D02BCBD38900FB98D8 /* FavoriteItems+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "FavoriteItems+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		97E506D32BCC5F0C00FB98D8 /* FavoritesPlistRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesPlistRepository.swift; sourceTree = "<group>"; };
 		97E506D62BCD2C7800FB98D8 /* RestaurantCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCellViewModel.swift; sourceTree = "<group>"; };
-		97E506D82BCE5C5400FB98D8 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,18 +54,9 @@
 		974A5CDC2B94DFCE0079EC77 = {
 			isa = PBXGroup;
 			children = (
-				97E506D82BCE5C5400FB98D8 /* .gitignore */,
 				974A5CE72B94DFCE0079EC77 /* WoltAssignment */,
-				974A5CE62B94DFCE0079EC77 /* Products */,
+				97431F842BCFFAB300804D47 /* WoltAssignment.app */,
 			);
-			sourceTree = "<group>";
-		};
-		974A5CE62B94DFCE0079EC77 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				974A5CE52B94DFCE0079EC77 /* WoltAssignment.app */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		974A5CE72B94DFCE0079EC77 /* WoltAssignment */ = {
@@ -80,6 +69,8 @@
 				974A5CF32B94DFD00079EC77 /* LaunchScreen.storyboard */,
 				97E506CB2BCA887600FB98D8 /* Items.xcdatamodeld */,
 				974A5CF62B94DFD00079EC77 /* Info.plist */,
+				97AC13852BCF9EF000B12F79 /* .gitignore */,
+				97AC13872BCF9F0800B12F79 /* .swiftlint.yml */,
 			);
 			path = WoltAssignment;
 			sourceTree = "<group>";
@@ -99,8 +90,6 @@
 		97E506CE2BCBCE0100FB98D8 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				97E506CF2BCBD38900FB98D8 /* FavoriteItems+CoreDataClass.swift */,
-				97E506D02BCBD38900FB98D8 /* FavoriteItems+CoreDataProperties.swift */,
 				974A5D012B94E3FD0079EC77 /* RestaurantModel.swift */,
 			);
 			path = Models;
@@ -122,17 +111,20 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 974A5CF92B94DFD00079EC77 /* Build configuration list for PBXNativeTarget "WoltAssignment" */;
 			buildPhases = (
+				97431F832BCFF84B00804D47 /* ShellScript */,
 				974A5CE12B94DFCE0079EC77 /* Sources */,
-				974A5CE22B94DFCE0079EC77 /* Frameworks */,
 				974A5CE32B94DFCE0079EC77 /* Resources */,
+				974A5CE22B94DFCE0079EC77 /* Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = WoltAssignment;
+			packageProductDependencies = (
+			);
 			productName = WoltAssignment;
-			productReference = 974A5CE52B94DFCE0079EC77 /* WoltAssignment.app */;
+			productReference = 97431F842BCFFAB300804D47 /* WoltAssignment.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -151,7 +143,7 @@
 				};
 			};
 			buildConfigurationList = 974A5CE02B94DFCE0079EC77 /* Build configuration list for PBXProject "WoltAssignment" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 15.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -159,7 +151,9 @@
 				Base,
 			);
 			mainGroup = 974A5CDC2B94DFCE0079EC77;
-			productRefGroup = 974A5CE62B94DFCE0079EC77 /* Products */;
+			packageReferences = (
+			);
+			productRefGroup = 974A5CDC2B94DFCE0079EC77;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -173,13 +167,35 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				97AC138E2BCFA2DB00B12F79 /* .gitignore in Resources */,
+				97AC13882BCF9F0800B12F79 /* .swiftlint.yml in Resources */,
 				974A5CF52B94DFD00079EC77 /* LaunchScreen.storyboard in Resources */,
-				97E506D92BCE5C5400FB98D8 /* .gitignore in Resources */,
 				974A5CF22B94DFD00079EC77 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		97431F832BCFF84B00804D47 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if [[ \"$(uname -m)\" == arm64 ]]; then\n    export PATH=\"/opt/homebrew/bin:$PATH\"\nfi\n\necho \"@@@$(pwd)\"\n\nif which swiftlint > /dev/null; then\n  cd WoltAssignment; swiftlint\nelse\n  echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		974A5CE12B94DFCE0079EC77 /* Sources */ = {
@@ -192,8 +208,6 @@
 				974A5CFE2B94E3260079EC77 /* RestaurantsViewModel.swift in Sources */,
 				97E506D72BCD2C7800FB98D8 /* RestaurantCellViewModel.swift in Sources */,
 				974A5CE92B94DFCE0079EC77 /* AppDelegate.swift in Sources */,
-				97E506D12BCBD38900FB98D8 /* FavoriteItems+CoreDataClass.swift in Sources */,
-				97E506D22BCBD38900FB98D8 /* FavoriteItems+CoreDataProperties.swift in Sources */,
 				974A5D022B94E3FD0079EC77 /* RestaurantModel.swift in Sources */,
 				97E506CD2BCA887600FB98D8 /* Items.xcdatamodeld in Sources */,
 				974A5CEB2B94DFCE0079EC77 /* SceneDelegate.swift in Sources */,
@@ -340,6 +354,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3NHDGNZJX6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WoltAssignment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -367,6 +383,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3NHDGNZJX6;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = WoltAssignment/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

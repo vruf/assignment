@@ -1,13 +1,10 @@
-import Foundation
 import Combine
 import UIKit
-import CoreData
 
 struct Coordinates {
     let lat: String
     let lon: String
 }
-
 
 class RestaurantsViewModel {
     final private let fetchURL: String = "https://restaurant-api.wolt.com/v1/pages/restaurants"
@@ -21,22 +18,21 @@ class RestaurantsViewModel {
         .init(lat: "60.167560", lon: "24.932562"),
         .init(lat: "60.168254", lon: "24.931532"),
         .init(lat: "60.169012", lon: "24.930341"),
-        .init(lat: "60.170085", lon: "24.929569"),
+        .init(lat: "60.170085", lon: "24.929569")
     ]
     final private let itemsLimit: Int = 15
-    
-    
+
     var items: [Item]?
     var itemsCount: Int {
         items?.count ?? 0
     }
     var favoriteItems: Set<String> = []
-    
+
     func loadItems(completion: @escaping () -> Void) {
         guard let url = URL(string: "\(fetchURL)?lat=\(coordinates[0].lat)&lon=\(coordinates[0].lon)") else {
             return
         }
-        
+
         URLSession.shared.dataTask(with: url) { data, _, error in
             if let error = error {
                 print("error: \(error.localizedDescription)")
@@ -51,7 +47,7 @@ class RestaurantsViewModel {
                     self.items = []
                     return
                 }
-                
+
                 self.items = Array(section.items[0..<15])
                 self.favoriteItems = self.getFavoriteVenues()
                 completion()
@@ -61,14 +57,14 @@ class RestaurantsViewModel {
                 return
             }
         }.resume()
-        
+
         coordinates.append(coordinates.removeFirst())
     }
-    
+
     func getFavoriteVenues() -> Set<String> {
         return FavoritesPlistRepository.shared.loadFavorites()
     }
-    
+
     func isFavoriteVenue(for id: String) -> Bool {
         return favoriteItems.contains(id)
     }
