@@ -1,5 +1,3 @@
-import Foundation
-
 struct RestaurantsResponse: Codable {
     let sections: [Section]
 }
@@ -10,7 +8,7 @@ struct Section: Codable {
 
     init(from decoder: any Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        
+
         switch try container.decode(String.self, forKey: .template) {
             case "venue-vertical-list":
                 let items = try container.decode([Item].self, forKey: .items)
@@ -38,7 +36,7 @@ struct Venue: Codable {
     let name: String
     let description: String?
     var isFavorite: Bool = false
-    
+
     enum CodingKeys: String, CodingKey {
         case id = "id"
         case name = "name"

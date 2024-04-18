@@ -3,14 +3,15 @@ import Foundation
 class FavoritesPlistRepository {
     static let shared: FavoritesPlistRepository = FavoritesPlistRepository()
     private let path: String = "favorites.plist"
-    
+
     func saveFavorites(_ items: Set<String>) {
         let favoritesArray: [String] = Array(items)
-        
-        guard let plistURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent(path) else {
+
+        guard let plistURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+            .first?.appendingPathComponent(path) else {
             return
         }
-        
+
         do {
             let data = try PropertyListSerialization.data(fromPropertyList: favoritesArray, format: .binary, options: 0)
             try data.write(to: plistURL)
@@ -18,12 +19,13 @@ class FavoritesPlistRepository {
             print("Error saving favorite item IDs: \(error)")
         }
     }
-    
+
     func loadFavorites() -> Set<String> {
-        guard let plistURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask).first?.appendingPathComponent(path) else {
+        guard let plistURL = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)
+            .first?.appendingPathComponent(path) else {
             return []
         }
-        
+
         do {
             let data = try Data(contentsOf: plistURL)
             let favorites = try PropertyListSerialization.propertyList(from: data, format: nil) as? [String] ?? []
